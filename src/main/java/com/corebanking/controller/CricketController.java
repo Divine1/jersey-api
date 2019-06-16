@@ -14,6 +14,12 @@ public class CricketController {
 
 	@Inject
 	private CricketService cricketService;
+	
+//	@Inject
+//    public CricketController(CricketService cricketService) {
+//        this.cricketService = cricketService;
+//    }
+	
 	int count = 0;
 	//private CricketService cricketService= new CricketService();
 	
