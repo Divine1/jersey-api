@@ -1,25 +1,27 @@
 package com.corebanking.controller;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-
-import org.glassfish.jersey.process.internal.RequestScoped;
+import javax.ws.rs.PathParam;
 
 import com.corebanking.service.CricketService;
 
-@Path("cricket")
-@ApplicationScoped
+@Path("/cricket")
+//@ApplicationScoped
 public class CricketController {
 
-	@Inject
-	private CricketService cricketService;
-	//private CricketService cricketService= new CricketService();
+//	@Inject
+//	private CricketService cricketService;
+	
+	private CricketService cricketService= new CricketService();
 	
 	@GET
-	public String getCricket() {
+	@Path("/{country}")
+	public String getCricket(@PathParam("country") String countryName) {
 		cricketService.hitFour();
-		return "cricket only1";
+		System.out.println("country "+countryName);
+		System.out.println(countryName);
+		return "cricket only122";
 	}
 }
