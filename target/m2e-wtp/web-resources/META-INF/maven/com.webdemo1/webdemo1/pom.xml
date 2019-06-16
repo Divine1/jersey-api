@@ -46,11 +46,11 @@
  
 
 <!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-core -->
- <dependency>
+<!--  <dependency>
     <groupId>org.jboss.weld.se</groupId>
     <artifactId>weld-se-core</artifactId>
     <version>3.1.1.Final</version>
-</dependency> 
+</dependency>  -->
 
 
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
