@@ -10,7 +10,7 @@ import com.corebanking.controller.CricketController;
 
 
 
-@ApplicationPath("/sports")
+@ApplicationPath("sports")
 public class Myapplication extends Application {
 
 	@Override

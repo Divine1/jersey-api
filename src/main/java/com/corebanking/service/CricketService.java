@@ -1,9 +1,9 @@
 package com.corebanking.service;
 
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Singleton;
 
-@ApplicationScoped
+@Singleton
 public class CricketService {
 
 	public void hitFour() {
