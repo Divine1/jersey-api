@@ -12,10 +12,10 @@ import com.corebanking.service.CricketService;
 @Singleton
 public class CricketController {
 
-//	@Inject
-//	private CricketService cricketService;
+	@Inject
+	private CricketService cricketService;
 	int count = 0;
-	private CricketService cricketService= new CricketService();
+	//private CricketService cricketService= new CricketService();
 	
 	@GET
 	@Path("/{country}")
